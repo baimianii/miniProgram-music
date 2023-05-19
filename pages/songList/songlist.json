@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "home-serach": "/components/home/search/search",
+    "home-swiper": "/components/home/swiper/swiper",
+    "home-newmusic": "/components/home/newmusic/newmusic"
+  }
+}

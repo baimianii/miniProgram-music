@@ -1,0 +1,8 @@
+<!--components/home/swiper/swiper.wxml-->
+<swiper indicator-dots autoplay indicator-color='rgba(255,255,255,0.5)' indicator-active-color="rgba(194,12,12,1)" circular class="swiper">
+	<block wx:for="{{banners}}" wx:key="targetId">
+		<swiper-item class="sWitem" skip-hidden-item-layout>
+			<image class="img" src="{{item.imageUrl}}" />
+		</swiper-item>
+	</block>
+</swiper>

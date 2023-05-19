@@ -1,0 +1,30 @@
+{
+  "usingComponents": {},
+  "pages": ["pages/songList/songlist", "pages/find/find", "pages/singerDetail/singerDetail", "pages/play/play"],
+  "tabBar": {
+    "color": "#777777",
+    "selectedColor": "#c20c0c",
+    "list": [
+      {
+        "pagePath": "pages/songList/songlist",
+        "text": "首页",
+        "iconPath": "/image/icon/ic-item-default.png",
+        "selectedIconPath": "/image/icon/ic-item-active.png"
+      },
+
+      {
+        "pagePath": "pages/find/find",
+        "text": "发现",
+        "iconPath": "/image/icon/ic-find-defalut.png",
+        "selectedIconPath": "/image/icon/ic-find-active.png"
+      }
+    ]
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#c20c0c",
+    "navigationBarTitleText": "白面音乐",
+    "navigationBarTextStyle": "white"
+  },
+  "sitemapLocation": "sitemap.json"
+}

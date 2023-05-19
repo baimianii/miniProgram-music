@@ -1,0 +1,30 @@
+<view class="imgshow">
+	<image src="{{singerdata.img1v1Url}}" mode="widthFix" />
+	<view class="txtbox">
+		<view class="name">{{singerdata.name}}</view>
+		<view class="txt">{{singerdata.alias[0]}}</view>
+		<view class="txt"> 网易云音乐--热门歌手 </view>
+	</view>
+</view>
+<view class="brief">歌手简介</view>
+<view class="content" style="height: {{height}}rpx;">
+	{{singerdedail.briefDesc}}
+</view>
+<view class="showText" size="mini" bindtap="showBrief">
+	{{isShow}}
+	<van-icon name="{{isIcon}}" />
+</view>
+<view class="hot-title">热门单曲</view>
+<view class="musicBox">
+	<view class="musicBox-item" wx:for="{{HotMusic}}" wx:key="index">
+		<view class="txtBox">
+			<text class="singname">{{item.awardName}}</text>
+			<text class="songname">{{item.name}}</text>
+			<text class="singname">{{item.ar[0].name}}</text>
+		</view>
+		<van-icon name="play-circle-o" size="25px" bindtap="playlink" data-index="{{index}}" />
+	</view>
+	<view wx:hide="!{{currentPage==50}}" class="bottomText">
+		数据到底...
+	</view>
+</view>

@@ -1,0 +1,10 @@
+<view class="hot-title">最新音乐</view>
+<view class="musicBox">
+	<view class="musicBox-item" wx:for="{{newMusic}}" wx:key="index">
+		<view class="txtBox">
+			<text class="songname">{{item.name}}</text>
+			<text class="singname">{{item.artists[0].name}}</text>
+		</view>
+		<van-icon name="play-circle-o" size="25px" color="white" bindtap="playlink" data-index="{{index}}" />
+	</view>
+</view>

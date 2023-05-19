@@ -1,0 +1,16 @@
+<view class="box">
+	<!--pages/songList/songlist.wxml-->
+	<home-serach></home-serach>
+	<home-swiper></home-swiper>
+
+	<view class="hot-title">热门歌手</view>
+	<view class="singer-hot-list">
+		<block wx:for="{{hotSinger}}" wx:key="accountId">
+			<view class="singer-item" bindtap="hotLink" data-singerId="{{index}}">
+				<image src="{{item.img1v1Url}}" />
+				<text>{{item.name}}</text>
+			</view>
+		</block>
+	</view>
+	<home-newmusic></home-newmusic>
+</view>

@@ -1,0 +1,6 @@
+<!--components/home/search/search.wxml-->
+<view class="search">
+	<van-icon name="search" color="white" size="20px" />
+	<input class="input" type="text" placeholder="{{keyWord}}" placeholder-style="color: #C0C0C0;text-indent:16rpx;font-size:25rpx" value="{{serachVal}}" bindinput="getVal"/>
+	<van-icon name="scan" color="white" size="20px" />
+</view>

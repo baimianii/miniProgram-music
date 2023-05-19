@@ -1,0 +1,37 @@
+<view class="musicName">
+	<view class="NameTitle">{{musicList.al.name}}</view>
+	<view class="Namename">{{musicList.ar[0].name}}</view>
+</view>
+<image class="bg" src="{{musicList.al.picUrl}}" mode="heightFix" />
+
+
+<swiper>
+	<!-- 光碟 -->
+	<swiper-item class="imgBox">
+		<image src="{{musicList.al.picUrl}}" mode="heightFix" style="animation-play-state: {{isPlay?'paused':'running'}}; " />
+	</swiper-item>
+	<!-- 歌词 -->
+	<swiper-item class="lyric">
+		<scroll-view scroll-y="true">
+			<block wx:for="{{lrcData}}" wx:key="index">
+				<view>{{item[1]}}</view>
+			</block>
+		</scroll-view>
+	</swiper-item>
+</swiper>
+<!-- 播放模式 -->
+<view class="playmode">
+	<image src="/image/icon/ic-cicurl.png" />
+</view>
+<!-- 进度条 -->
+<view class="timebox">
+	<view>{{playtime}}</view>
+	<slider class="slider" bindchange="sliderChange" block-size="12" />
+	<view>{{showTime2}}</view>
+</view>
+<!-- 底部按钮 -->
+<view class="footer">
+	<image src="/image/icon/ic-up.png" mode="" />
+	<van-icon name="{{ isPlay?'play-circle-o':'pause-circle-o'}}" size="40px" color="white" bindtap="togglePlay" />
+	<image src="/image/icon/ic-down.png" mode="" />
+</view>

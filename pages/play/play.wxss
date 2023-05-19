@@ -1,0 +1,126 @@
+page {
+  height: 100%;
+  position: relative;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+}
+
+page .bg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0.4;
+}
+
+page .musicName {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  line-height: 80rpx;
+  margin-top: 10rpx;
+  opacity: 1;
+}
+
+page .musicName .NameTitle {
+  font-size: 45rpx;
+  color: white;
+}
+
+page .musicName .Namename {
+  font-size: 35rpx;
+  color: white;
+}
+
+page swiper {
+  box-sizing: border-box;
+  margin-top: 40%;
+  position: relative;
+  height: 550rpx;
+}
+
+page swiper .imgBox image {
+  margin-left: 125rpx;
+  margin-top: 25rpx;
+  margin-bottom: 25rpx;
+  border: 100rpx solid #292929;
+  box-shadow: 0rpx 0rpx 30rpx white;
+  object-fit: cover;
+  width: 300rpx;
+  height: 300rpx;
+  border-radius: 50%;
+  animation: play 15s linear infinite;
+}
+
+@keyframes play {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+page swiper .lyric scroll-view {
+  height: 100%;
+}
+
+page swiper .lyric scroll-view view {
+  color: white;
+  text-align: center;
+  font-size: 35rpx;
+  line-height: 80rpx;
+  letter-spacing: 1px;
+}
+
+page .playmode {
+  width: 100rpx;
+  height: 100rpx;
+  position: relative;
+  bottom: -23%;
+  left: 90%;
+}
+
+page .playmode image {
+  width: 50rpx;
+  height: 50rpx;
+}
+
+page .timebox {
+  height: 100rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+  bottom: -20%;
+}
+
+page .timebox view {
+  text-align: center;
+  width: 100rpx;
+  font-size: 30rpx;
+  color: white;
+}
+
+page .timebox .slider {
+  width: 500rpx;
+}
+
+page .footer {
+  width: 100%;
+  position: absolute;
+  bottom: -20rpx;
+  height: 200rpx;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+page .footer image {
+  width: 50rpx;
+  height: 50rpx;
+}
