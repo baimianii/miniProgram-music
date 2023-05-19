@@ -3,42 +3,23 @@
 const app = getApp()
 
 Page({
-  data: {
-        // isShow:{
-        //     show:"none",
-        //     isTrue:true
-        // }
-  },
-//   a(){
-//       if(this.data.isShow.isTrue){
-//           this.setData({
-//           isShow:{
-//               show:"block",
-//               isTrue:false
-//           }
-//       })
-//       }else{
-//         this.setData({
-//             isShow:{
-//                 show:"none",
-//                 isTrue:true
-//             }
-//       })
-//     }
-      
-//   },
-  // 事件处理函数
-  bindViewTap() {
-    
-  },
+  data: {},
+  //level  followeds  follows  avatarUrl
   onLoad() {
-    
+    this.getPerson()
   },
-  getUserProfile(e) {
-    
-    
-  },
-  getUserInfo(e) {
-   
+  getPerson() {
+    wx.request({
+      url: 'http://localhost:3000/user/detail?uid=1628790244',
+      success: ({ data }) => {
+        this.setData({ personData: data })
+      }
+    }),
+      wx.request({
+        url: 'http://localhost:3000/user/playlist?uid=1628790244',
+        success: ({ data: { playlist } }) => {
+          this.setData({ personSong: playlist })
+        }
+      })
   }
 })

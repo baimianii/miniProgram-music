@@ -7,5 +7,17 @@
     "preloadBackgroundData": false
   },
   "libVersion": "2.31.1",
-  "condition": {}
+  "condition": {
+    "miniprogram": {
+      "list": [
+        {
+          "name": "",
+          "pathName": "pages/person/index",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        }
+      ]
+    }
+  }
 }

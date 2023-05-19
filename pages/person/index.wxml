@@ -1,4 +1,4 @@
-<view class="box">
+<view class="box" style="background: url('{{personData.profile.backgroundUrl}}');">
     <view class="top">
         <view class="top-left">
             <view>一</view>
@@ -17,39 +17,31 @@
     </view>
     <view class="top-1">
         <view class="toux">
-            <image src="/image/2.jpg" class="toux-tu"></image>
+            <image src="{{personData.profile.avatarUrl}}" class="toux-tu"></image>
         </view>
         <view class="top-1-a">
-            西街潇洒少年
+            {{personData.profile.nickname}}
             <view class="qq">开通会员</view>
         </view>
         <view class="top-1-b">
             <view class="top-1-b-a">
                 动态
-                <view>
-                    66
-                </view>
+                <view>{{personData.profile.authStatus}}</view>
             </view>
             <view class="top-1-b-a aa">|</view>
             <view class="top-1-b-a">
                 关注
-                <view>
-                    888
-                </view>
+                <view>{{personData.profile.follows}}</view>
             </view>
             <view class="top-1-b-a aa">|</view>
             <view class="top-1-b-a">
                 粉丝
-                <view>
-                    5200
-                </view>
+                <view>{{personData.profile.followeds}}</view>
             </view>
             <view class="top-1-b-a aa">|</view>
             <view class="top-1-b-a">
                 等级
-                <view>
-                    0
-                </view>
+                <view>{{personData.level}}</view>
             </view>
         </view>
     </view>
@@ -117,11 +109,11 @@
     </view>
     <view class="zhongj">
         <view class="q1">
-            <image src="/image/11.jpg"></image>
+            <image src="{{personSong[0].coverImgUrl}}"></image>
         </view>
         <view class="q2">
             <view>我喜欢的音乐</view>
-            <view class="q22">1首</view>
+            <view class="q22">{{personSong[0].trackCount}}</view>
         </view>
         <view class="q3">
             <view class="q5">
@@ -149,6 +141,8 @@
             </view>
         </view>
         <view class="zhongj-2-2">
+
+
             <view>
                 <image src="/image/14.jpg"></image>
             </view>
