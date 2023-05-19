@@ -1,0 +1,302 @@
+.box {
+    background-color: whitesmoke;
+    padding: 0 30rpx;
+}
+
+.top {
+    /* background-color: red; */
+    width: 100%;
+    height: 100rpx;
+    display: flex;
+    /* padding: 0 30rpx; */
+}
+
+.top-left {
+    /* height: 100rpx;
+    line-height: 100rpx; */
+    margin-top: 25rpx;
+}
+
+.top-left view {
+    /* font-size: 2rpx; */
+    font-weight: 550;
+    line-height: 15rpx;
+    color: black;
+    font-size: 18px;
+}
+
+.top-zhongjia {
+    margin-left: 210rpx;
+    display: flex;
+    margin-top: 25rpx;
+    line-height: 70rpx;
+    width: 150rpx;
+    background-color: white;
+    /* border: 1px solid wheat; */
+    border-radius: 30rpx;
+    padding: 0 20rpx;
+    font-size: 28rpx;
+}
+
+.top-zhongjia-a {
+    margin-right: 10rpx;
+}
+
+.top-right image {
+    width: 50rpx;
+    height: 50rpx;
+}
+
+.top-right {
+    margin-left: 200rpx;
+    width: 50rpx;
+    height: 50rpx;
+    margin-top: 25rpx;
+}
+.top-1{
+    /* border: 1px solid red; */
+    margin-top: 12rpx;
+    background-color: white;
+    border-radius: 20rpx;
+}
+.toux{
+    width: 150rpx;
+    height: 150rpx;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+.toux image{
+    width: 150rpx;
+    height: 150rpx;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+.top-1-a{
+    /* margin-top: 15rpx; */
+    text-align: center;
+    /* border: 1px solid blue; */
+    padding: 0 20rpx;
+    width: 370rpx;
+    margin: 15rpx auto;
+    font-weight: 600;
+    font-size: 18px;
+    display: flex;
+}
+.top-1-a .qq{
+    font-size: 12px;
+    background-color: #bbb;
+    color: #fff;
+    margin-top: 10rpx;
+    margin-bottom: 10rpx;
+    border-radius: 20rpx;
+    width: 120rpx;
+    margin-left:25rpx;
+}
+.top-1-b{
+    display: flex;
+    /* border: 1px solid red; */
+}
+.top-1-b-a{
+    margin-left: 48rpx;
+    text-align: center;
+}
+.top-1-b .aa{
+    color: gray;
+}
+.tt{
+    margin-top: 30rpx;
+    padding: 6rpx;
+    border-radius: 20rpx;
+    background-color: white;
+}
+.top-2{
+    /* margin-top: 30rpx; */
+    
+    display: flex;
+    padding: 0rpx 44rpx;
+}
+.top-2 .sss image{
+    border-radius: 50%;
+}
+.top-2 .sss{
+    margin-right: 35rpx;
+}
+.top-2-a{
+    width: 130rpx;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 30rpx;
+}
+.top-2-a image{
+    width: 60rpx;
+    height: 60rpx;
+}
+.top-3{
+    display: flex;
+    padding: 0rpx 44rpx;
+}
+.top-3 .sss image{
+    border-radius: 50%;
+}
+.top-3 .sss{
+    margin-right: 35rpx;
+}
+.top-2-a{
+    width: 130rpx;
+    font-size: 14px;
+    text-align: center;
+    /* margin-right: 25rpx; */
+    margin-top: 35rpx;
+}
+.top-2-a image{
+    width: 60rpx;
+    height: 60rpx;
+}
+.top-2 .a3{
+    margin-left: 20rpx;
+}
+.top-3 .a3{
+    margin-left: 20rpx;
+}
+.top-3-w{
+    margin-top: 20rpx;
+    display: flex;
+    border-top: 1px solid #ddd;
+    padding: 15rpx 0rpx;
+    color: gray;
+    font-size: 14px;
+}
+.top-3-w .qq{
+    margin-left: 250rpx;
+    margin-right: 20rpx;
+}
+.zhongj{
+    padding-top: 20rpx;
+    padding-bottom: 20rpx;
+    border-radius: 10px;
+    padding-left: 20rpx;
+    display: flex;
+    margin-top: 30rpx;
+    font-size: 14px;
+    background-color: white;
+}
+.zhongj .q1 image{
+    width: 120rpx;
+    height: 120rpx;
+}
+.zhongj .q2{
+    height: 80rpx;
+    margin: 25rpx;
+}
+.zhongj .q22{
+    font-size: 12px;
+    color: gray;
+}
+.zhongj .q3 image{
+    width: 30rpx;
+    height: 30rpx;
+}
+.zhongj .q3{
+    border: 1px solid #ddd;
+    height: 50rpx;
+    width: 160rpx;
+    padding-left: 15rpx;
+    line-height: 50rpx;
+    border-radius: 25rpx;
+    margin-left: 130rpx;
+    margin-top: 30rpx;
+    display: flex;
+    font-size: 12px;
+}
+.q4{
+    margin-left: 10rpx;
+}
+.q5{
+    margin-top: 8rpx;
+}
+.zhongj-1{
+    display: flex;
+}
+.zhongj-1 .w1{
+    margin-left: 100rpx;
+    margin-top: 30rpx;
+}
+.w1 .w11{
+    margin-left: 45rpx;
+    margin-top: -10rpx;
+    font-family: 700;
+    font-size: 18px;
+    color: red;
+}
+.zhongj-1 .ww1{
+    color: gray;
+}
+.zhongj-2{
+    padding: 25rpx;
+    background-color: white;
+    border-radius: 20rpx;
+}
+.zhongj-2-1{
+    /* border: 1px solid blue; */
+    display: flex;
+    font-size: 12px;
+    color: gray;
+}
+.zhongj-2-1 image{
+   width: 50rpx;
+   height: 50rpx;
+}
+.zhongj-2-1 .jia{
+    margin-left: 420rpx;
+    font-size: 16px;
+    margin-top: -5rpx;
+}
+.zhongj-2-1 .jiar{
+    margin-left: 30rpx;
+    font-size: 16px;
+}
+.zhongj-2-2{
+    display: flex;
+}
+.zhongj-2-2 image{
+    width: 120rpx;
+    height: 100rpx;
+}
+.zhongj-2-2 .e1{
+    margin-top: 25rpx;
+}
+.dibu{
+   
+    padding: 25rpx;
+    background-color: white;
+    border-radius: 20rpx;
+    margin-top: 20rpx;
+}
+.dibu .jiar{
+    margin-left: 430rpx;
+    font-size: 16px;
+}
+.dibu .zhongj-2-2 .rt image{
+    width: 570rpx;
+    height: 120rpx;
+}
+.rr image{
+    width: 50rpx;
+    height: 50rpx;
+}
+.rr{
+    margin-left: 15rpx;
+    margin-top: 40rpx;
+}
+.t1{
+    width: 100%;
+    
+    position:fixed;
+	left:auto;
+	right:auto;
+	bottom:0;
+}
+.t1 image{
+    width: 100%;
+    border-radius: 30rpx 30rpx 0 0;
+}

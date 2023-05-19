@@ -1,0 +1,178 @@
+<view class="box">
+    <view class="top">
+        <view class="top-left">
+            <view>一</view>
+            <view>一</view>
+            <view>一</view>
+        </view>
+        <view class="top-zhongjia">
+            <view class="top-zhongjia-a">+</view>
+            <view>添加状态</view>
+        </view>
+        <view class="top-right">
+            <navigator url="/pages/logs/logs">
+                <image src="/image/1.jpeg"></image>
+            </navigator>
+        </view>
+    </view>
+    <view class="top-1">
+        <view class="toux">
+            <image src="/image/2.jpg" class="toux-tu"></image>
+        </view>
+        <view class="top-1-a">
+            西街潇洒少年
+            <view class="qq">开通会员</view>
+        </view>
+        <view class="top-1-b">
+            <view class="top-1-b-a">
+                动态
+                <view>
+                    66
+                </view>
+            </view>
+            <view class="top-1-b-a aa">|</view>
+            <view class="top-1-b-a">
+                关注
+                <view>
+                    888
+                </view>
+            </view>
+            <view class="top-1-b-a aa">|</view>
+            <view class="top-1-b-a">
+                粉丝
+                <view>
+                    5200
+                </view>
+            </view>
+            <view class="top-1-b-a aa">|</view>
+            <view class="top-1-b-a">
+                等级
+                <view>
+                    0
+                </view>
+            </view>
+        </view>
+    </view>
+    <view class="tt">
+        <view class="top-2">
+            <view class="top-2-a sss">
+                <image src="/image/3.jpg"></image>
+                <view>
+                    最近播放
+                </view>
+            </view>
+            <view class="top-2-a">
+                <image src="/image/4.jpg"></image>
+                <view>
+                    本地/下载
+                </view>
+            </view>
+            <view class="top-2-a a3">
+                <image src="/image/5.jpg"></image>
+                <view>
+                    云盘
+                </view>
+            </view>
+            <view class="top-2-a">
+                <image src="/image/6.jpg"></image>
+                <view>
+                    已购
+                </view>
+            </view>
+        </view>
+        <view class="top-3">
+            <view class="top-2-a sss">
+                <image src="/image/7.jpg"></image>
+                <view>
+                    我的好友
+                </view>
+            </view>
+            <view class="top-2-a">
+                <image src="/image/8.jpg"></image>
+                <view>
+                    收藏和赞
+                </view>
+            </view>
+            <view class="top-2-a a3">
+                <image src="/image/9.jpg"></image>
+                <view>
+                    我的播客
+                </view>
+            </view>
+            <view class="top-2-a">
+                <image src="/image/10.jpg"></image>
+                <view>
+                    乐迷团
+                </view>
+            </view>
+        </view>
+        <view class="top-3-w">
+            <view class="qq">
+                +
+            </view>
+            <view>
+                音乐应用
+            </view>
+        </view>
+    </view>
+    <view class="zhongj">
+        <view class="q1">
+            <image src="/image/11.jpg"></image>
+        </view>
+        <view class="q2">
+            <view>我喜欢的音乐</view>
+            <view class="q22">1首</view>
+        </view>
+        <view class="q3">
+            <view class="q5">
+                <image src="/image/12.jpg"></image>
+            </view>
+            <view class="q4">心动模式</view>
+        </view>
+    </view>
+    <view class="zhongj-1">
+        <view class="w1">
+            <view>
+                创建歌单
+            </view>
+            <view class="w11">一</view>
+        </view>
+        <view class="w1 ww1">|</view>
+        <view class="w1 ww1">收藏歌单</view>
+    </view>
+    <view class="zhongj-2">
+        <view class="zhongj-2-1">
+            <view>创建歌单</view>
+            <view class="jia">+</view>
+            <view class="jiar">
+                <image src="/image/13.jpg" bindtap="a"></image>
+            </view>
+        </view>
+        <view class="zhongj-2-2">
+            <view>
+                <image src="/image/14.jpg"></image>
+            </view>
+            <view class="e1">一键导入外部音乐</view>
+        </view>
+    </view>
+    <view class="dibu">
+        <view class="zhongj-2-1">
+            <view>收藏歌单(1个)</view>
+
+            <view class="jiar">
+                <image src="/image/13.jpg"></image>
+            </view>
+        </view>
+        <view class="zhongj-2-2">
+            <view class="rt">
+                <image src="/image/15.jpg"></image>
+            </view>
+            <view class="rr">
+                <image src="/image/13.jpg"></image>
+            </view>
+        </view>
+    </view>
+</view>
+<!-- <view style="display:{{isShow.show}};">
+    <image src="/image/16.jpg"></image>
+</view> -->

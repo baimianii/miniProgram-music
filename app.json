@@ -1,6 +1,12 @@
 {
   "usingComponents": {},
-  "pages": ["pages/songList/songlist", "pages/find/find", "pages/singerDetail/singerDetail", "pages/play/play"],
+  "pages": [
+    "pages/songList/songlist",
+    "pages/find/find",
+    "pages/singerDetail/singerDetail",
+    "pages/play/play",
+    "pages/person/index"
+  ],
   "tabBar": {
     "color": "#777777",
     "selectedColor": "#c20c0c",
@@ -13,8 +19,8 @@
       },
 
       {
-        "pagePath": "pages/find/find",
-        "text": "发现",
+        "pagePath": "pages/person/index",
+        "text": "个人",
         "iconPath": "/image/icon/ic-find-defalut.png",
         "selectedIconPath": "/image/icon/ic-find-active.png"
       }
