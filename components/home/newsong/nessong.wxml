@@ -1,0 +1,22 @@
+<view class="hot-title">新歌新碟</view>
+<swiper>
+	<!-- <block wx:for="{{newSong}}" wx:key="index"> -->
+	<swiper-item wx:for="{{newSong}}" wx:key="index" class="misicBox" next-margin="50" previous-margin="100">
+		<view>
+			<image src="{{item[0].picUrl}}" mode="widthFix" />
+			<view class="txt">
+				<view class="name">{{item[0].name}}</view>
+				<view>{{item[0].artist.name}}</view>
+			</view>
+		</view>
+		<view>
+			<image src="{{item[1].picUrl}}" mode="widthFix" />
+			<view class="txt">
+				<view>{{item[1].name}}</view>
+				<view class="name">{{item[1].artist.name}}</view>
+			</view>
+		</view>
+	</swiper-item>
+	<!-- </block> -->
+
+</swiper>

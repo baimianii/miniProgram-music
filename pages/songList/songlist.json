@@ -2,6 +2,7 @@
   "usingComponents": {
     "home-serach": "/components/home/search/search",
     "home-swiper": "/components/home/swiper/swiper",
-    "home-newmusic": "/components/home/newmusic/newmusic"
+    "home-newmusic": "/components/home/newmusic/newmusic",
+    "home-newsong":"/components/home/newsong/nessong"
   }
 }

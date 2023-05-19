@@ -1,0 +1,38 @@
+page .hot-title {
+  margin-top: 10rpx;
+  font-size: 32rpx;
+  font-weight: bold;
+  line-height: 30rpx;
+  color: #fff;
+  border-left: 5px solid #b11b1b;
+  padding-left: 10rpx;
+  margin: 40rpx 0;
+}
+
+page swiper swiper-item view {
+  display: flex;
+  justify-content: flex-start;
+}
+
+page swiper swiper-item view image {
+  width: 120rpx;
+  height: 120rpx;
+  margin: 15rpx;
+}
+
+page swiper swiper-item view .txt {
+  display: flex;
+  flex-direction: column;
+  line-height: 50rpx;
+  width: 500rpx;
+  color: white;
+}
+
+page swiper swiper-item view .txt .name {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  word-break: break-all;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}

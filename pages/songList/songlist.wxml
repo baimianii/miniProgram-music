@@ -2,7 +2,7 @@
 	<!--pages/songList/songlist.wxml-->
 	<home-serach></home-serach>
 	<home-swiper></home-swiper>
-
+	<home-newsong></home-newsong>
 	<view class="hot-title">热门歌手</view>
 	<view class="singer-hot-list">
 		<block wx:for="{{hotSinger}}" wx:key="accountId">

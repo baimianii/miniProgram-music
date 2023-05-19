@@ -1,8 +1,7 @@
 // pages/songList/songlist.js
 Page({
   data: {
-    hotSinger: [],
-
+    hotSinger: []
   },
 
   //获取热门歌手
