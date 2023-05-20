@@ -37,5 +37,5 @@
 
 .musicBox .musicBox-item .txtBox .singname {
   font-size: 20rpx;
-  color: #777;
+  color: rgb(233, 233, 233);
 }
