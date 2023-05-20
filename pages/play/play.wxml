@@ -25,9 +25,9 @@
 </view>
 <!-- 进度条 -->
 <view class="timebox">
-	<view>{{playtime}}</view>
-	<slider class="slider" bindchange="sliderChange" block-size="12" />
 	<view>{{showTime2}}</view>
+	<slider class="slider" bindchange="sliderChange" block-size="12" value="{{sliderValue}}" />
+	<view>{{showTime1}}</view>
 </view>
 <!-- 底部按钮 -->
 <view class="footer">

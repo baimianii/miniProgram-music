@@ -8,7 +8,8 @@ Page({
     _audio: {},
     isPlay: false,
     lrcData: [],
-    audioDuration: ''
+    audioDuration: '',
+    showJikan: null
   },
 
   onLoad(options) {
@@ -44,36 +45,49 @@ Page({
   playaudio: function () {
     const audio = wx.createInnerAudioContext() //音乐实列
     audio.src = `http://music.163.com/song/media/outer/url?id=${this.data.musicList.id}.mp3`
-
-    audio.play(() => {
-      audio.pause()
-    })
-    if (audio.play()) {
-      audio.stop()
-    }
     audio.autoplay = true
     this.setData({ _audio: audio })
-    audio.onCanplay(() => {
-      audio.duration
-      setTimeout(() => {
-        const duration = audio.duration
-        let min = parseInt(duration / 60)
-        let sec = parseInt(duration % 60)
-        min.toString().length == 1 ? (min = `0${min}`) : min
-        sec.toString().length == 1 ? (sec = `0${sec}`) : sec
-        this.setData({ audioDuration: audio.duration, showTime2: `${min}:${sec}` })
-      }, 1000)
-      console.log(this.data)
-    })
+    this.getTime()
   },
   //暂停播放
   togglePlay: function () {
     const audio = this.data._audio
-    this.data.isPlay ? audio.play() : audio.pause()
-    this.data.isPlay ? this.setData({ isPlay: false }) : this.setData({ isPlay: true })
+    if (this.data.isPlay) {
+      audio.play()
+      this.setData({ isPlay: false })
+    } else {
+      audio.pause()
+      this.setData({ isPlay: true })
+      clearInterval(this.data.showJikan)
+    }
+    // this.data.isPlay ? :
   },
   //获取时间
-
+  getTime: function () {
+    const audio = this.data._audio
+    audio.duration
+    audio.currentTime
+    const showJik = setInterval(() => {
+      const duration = audio.duration
+      let min1 = parseInt(duration / 60)
+      let sec1 = parseInt(duration % 60)
+      min1 = min1.toString().length == 1 ? (min1 = `0${min1}`) : min1
+      sec1 = sec1.toString().length == 1 ? (sec1 = `0${sec1}`) : sec1
+      const currentTime = audio.currentTime
+      let min = parseInt(currentTime / 60)
+      let sec = parseInt(currentTime % 60)
+      min = min.toString().length == 1 ? (min = `0${min}`) : min
+      sec = sec.toString().length == 1 ? (sec = `0${sec}`) : sec
+      this.setData({
+        showJikan: showJik,
+        audioDuration: duration,
+        sliderValue: currentTime,
+        showTime1: `${min1}:${sec1}`,
+        showTime2: `${min}:${sec}`
+      })
+      console.log(this.data.sliderValue)
+    }, 1000)
+  },
   //获取歌词
   async getLrc() {
     const geci = []
@@ -106,16 +120,18 @@ Page({
   sliderChange: function (e) {
     const audio = this.data._audio
     const value = e.detail.value
+    audio.currentTime = value
+    /*   const audio = this.data._audio
+    const value = e.detail.value
     this.setData({ audioTime: value })
     const duration = this.data.audioDuration
     value = parseInt((value * duration) / 100)
     this.setData({
       audioSeek: value,
       isPlayAudio: true
-    })
-    audio.seek(value)
-    audio.play()
-    console.log(this.data)
+    }) */
+    /*    audio.seek(value)
+    audio.play() */
   },
   onReady() {},
 
